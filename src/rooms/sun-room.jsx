@@ -35,10 +35,10 @@ export default function SunRoom(props) {
     return (
         <div className='room-background gas-giant'>
             <div className='game-container'>
-                {loading === true ? (<h1>Loading Map...</h1>) : (<Game planetName={props.history.location.pathname} map={map} currentRoom={currentRoom} setCurrentRoom={setCurrentRoom} />)}
+                {loading === true ? (<h1 style={{ color: 'white' }}>Loading Map Data...</h1>) : (<Game planetName={props.history.location.pathname} map={map} currentRoom={currentRoom} setCurrentRoom={setCurrentRoom} />)}
             </div>
             <div className='info-container'>
-                {loading === true ? (<h1>Loading Map Data...</h1>) : (<InfoBox planetName={props.history.location.pathname} planet={planet} currentRoom={currentRoom} props ={props}/>)}
+                {loading === true ? null : (<InfoBox planetName={props.history.location.pathname} planet={planet} currentRoom={currentRoom} props ={props}/>)}
             </div>
         </div>
     )

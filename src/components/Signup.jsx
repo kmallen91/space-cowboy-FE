@@ -4,7 +4,7 @@ import Button from "@material-ui/core/Button";
 import { Form } from 'react-bootstrap';
 import axios from 'axios';
 
-export default function Signup() {
+export default function Signup(props) {
     const [username, setUsername] = useState('')
     const [password1, setPassword1] = useState('')
     const [password2, setPassword2] = useState('')
@@ -24,6 +24,7 @@ export default function Signup() {
         .then(res => {
             console.log(res)
             localStorage.setItem('token', res.data.key)
+            props.history.push('/')
         })
         .catch(err => console.error(err))
     }
