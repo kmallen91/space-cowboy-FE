@@ -41,10 +41,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Route path='/' component={ Navbar } />
-        <Route exact path='/' component={ LandingPage } />
-        <Route exact path='/signup' component={ Signup } />
+         {/* <Route exact path='/' component={ LandingPage } />
+         <Route exact path='/signup' component={ Signup } /> */}
         <Route exact path='/game' component={GameState} />
-        <PrivateRoute exact path='/map' component={Map} />
+        <Route exact path='/map' component={Map} />
         <Route path='/Mordor' render={(props) => < IceGiantRoom {...props} currentRoom={currentRoom}  />} />
         <Route path='/Ragnarok' render={(props) => < RedGiantRoom {...props} currentRoom={currentRoom} />} />
         <Route path='/Titan' render={(props) => < GasGiantRoom {...props} currentRoom={currentRoom} />} />
