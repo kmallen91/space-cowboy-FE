@@ -35,14 +35,17 @@ export default function LandingPage(props) {
             <h1 className='title-box'>
                 SPACE COWBOY
             </h1>
-            <Form style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
+            <h1 className='title-box'>
+                Click MAP to play!
+            </h1>
+            {/* <Form style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
                 <h1 style={{ color: 'white' }}>Login</h1>
                 <Form.Label style={{ color: 'blue', marginBottom: '.5%' }}>Username</Form.Label>
                 <Form.Control value={username} type='text' placeholder='Username' style={{ color: 'white', backgroundColor: '#04060d', marginBottom: '1%', height: '3vh', width: '20%' }} onChange={e => setUsername(e.target.value)}/>
                 <Form.Label style={{ color: 'blue', marginBottom: '.5%' }}>Password</Form.Label>
                 <Form.Control value={password} type='password' placeholder='Password' style={{ color: 'white', backgroundColor: '#04060d', marginBottom: '1%', height: '3vh', width: '20%' }} onChange={e => setPassword(e.target.value)} />
                 <ColorButton type='submit' variant='contained' onClick={(e) => handleLogin(e)}>Login</ColorButton>
-            </Form>
+            </Form> */}
         </div>
     );
 }
