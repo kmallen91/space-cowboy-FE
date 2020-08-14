@@ -4,6 +4,7 @@ import Button from "@material-ui/core/Button";
 import { Form } from 'react-bootstrap';
 import axiosWithAuth from '../utils/axiosWithAuth';
 import axios from 'axios'
+import {Link} from 'react-router-dom'
 
 
 const ColorButton = withStyles(theme => ({
@@ -36,7 +37,9 @@ export default function LandingPage(props) {
                 SPACE COWBOY
             </h1>
             <h1 className='title-box'>
-                Click MAP to play!
+                Click 
+                <Link to ='/map'> MAP </Link> 
+                to play!
             </h1>
             {/* <Form style={{ display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
                 <h1 style={{ color: 'white' }}>Login</h1>
