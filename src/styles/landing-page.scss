@@ -1,0 +1,24 @@
+body {
+    background-image: url('../images/stars.jpg');
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+.landing-page {
+
+    .title-box{
+        text-align: center;
+        padding-top: 7rem;
+        color: white;
+    }
+
+    .login-box {
+        text-align: center;
+        color:white;
+        
+        .login-link{
+            text-decoration: none;
+            color: yellow;
+
+        }
+    }
+}
