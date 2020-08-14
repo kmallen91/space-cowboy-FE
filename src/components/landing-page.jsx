@@ -24,7 +24,7 @@ export default function LandingPage(props) {
 
     const handleLogin = e => {
         axios
-            .post('https://space-cowboyz.herokuapp.com/api/login/', {username:'kmallen91', password:'soccer20'})
+            .post('https://space-cowboyz.herokuapp.com/api/login/', {username:'kmallen91', password:'20soccer20'})
             .then(res => {
             localStorage.setItem('token', res.data.key)
             // props.history.push('/map')
