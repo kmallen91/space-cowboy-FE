@@ -17,16 +17,18 @@ export default function LandingPage(props) {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
 
+    useEffect (() => {
+        handleLogin()
+    }, [])
     
 
     const handleLogin = e => {
         e.preventDefault()
         axios
-            .post('https://space-cowboyz.herokuapp.com/api/login/', {username, password})
+            .post('https://space-cowboyz.herokuapp.com/api/login/', {username:'kmallen91', password:'soccer20'})
             .then(res => {
             localStorage.setItem('token', res.data.key)
-            console.log(res)
-            props.history.push('/map')
+            // props.history.push('/map')
             })    
             .catch(err => console.error(err))
     }
