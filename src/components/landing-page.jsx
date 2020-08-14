@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { withStyles } from '@material-ui/core';
 import Button from "@material-ui/core/Button";
 import { Form } from 'react-bootstrap';
@@ -23,7 +23,6 @@ export default function LandingPage(props) {
     
 
     const handleLogin = e => {
-        e.preventDefault()
         axios
             .post('https://space-cowboyz.herokuapp.com/api/login/', {username:'kmallen91', password:'soccer20'})
             .then(res => {
