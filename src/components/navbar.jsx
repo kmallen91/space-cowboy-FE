@@ -24,6 +24,9 @@ export default function Navbar(props) {
             Map
           </NavLink>
         </li>
+        <li style={{cursor: 'pointer'}} onClick={logout} className='navButton'>          
+            Logout          
+        </li>
         </>
         
       </ul>
