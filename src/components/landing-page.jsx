@@ -27,7 +27,6 @@ export default function LandingPage(props) {
             .post('https://space-cowboyz.herokuapp.com/api/login/', {username:'kmallen91', password:'20soccer20'})
             .then(res => {
             localStorage.setItem('token', res.data.key)
-            // props.history.push('/map')
             })    
             .catch(err => console.error(err))
     }
