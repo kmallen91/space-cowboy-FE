@@ -10,25 +10,16 @@ export default function Navbar(props) {
   return (
     <div>
       <ul className="navbar"> 
-              <>
         <li>
           <NavLink exact to="/" className='navButton'>
             Home
           </NavLink>
-        </li>
-        </>
-      
-              <>
+        </li>      
         <li>
-        <NavLink exact to="/map" className='navButton'>
+          <NavLink exact to="/map" className='navButton'>
             Map
           </NavLink>
-        </li>
-        <li style={{cursor: 'pointer'}} onClick={logout} className='navButton'>          
-            Logout          
-        </li>
-        </>
-        
+        </li>        
       </ul>
     </div>
   );
